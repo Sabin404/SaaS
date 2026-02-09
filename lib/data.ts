@@ -3,6 +3,10 @@ import {
   MultiChannel,
   OnlineStoreIcon,
   POSIcon,
+  clockIcon,
+  protectionIcon,
+  bellIcon,
+  powerIcon
 } from "@/app/_components/icons/Icons";
 import Mark from "./../app/assets/mark.png";
 import Sarah from "./../app/assets/sarah.png";
@@ -12,6 +16,11 @@ import Speed from "./../app/assets/speed.png";
 import Purnima from "./../app/assets/purnima.jpg";
 import Shipping from "./../app/assets/shipping.png";
 import Bimal from "./../app/assets/bimal.jpg";
+import allproduct from "./../app/assets/allproduct.png";
+import realtime from "./../app/assets/realtime.png";
+import sync from './../app/assets/sync.png';
+
+
 export const sellerData = [
   {
     title: "Online Stores",
@@ -131,3 +140,281 @@ export const FAQData = [
       "Your data is protected using advanced security measures, encryption protocols, regular monitoring, and industry-standard practices to ensure safety.",
   },
 ];
+
+export const featureData=[
+  {
+    title:"All Your Products in One Dashboard",
+    subtitle:"Manage every item, variant, and category without switching between tools.",
+    image:allproduct,
+  },
+  {
+    title:"Real-time inventory accuracy",
+    subtitle:"Your stock updates instantly whenever orders are placed or updated.",
+    image:realtime,
+  },
+  {
+    title:"Sync across all channels",
+    subtitle:"Your website, POS, Instagram, and marketplaces stay perfectly aligned.",
+    image:sync,
+  }
+]
+
+export const inventoryData=[
+  {
+    title:'Real-time stock updates',
+    subtitle:'Your inventory updates instantly with every order, edit, return, or restock.',
+    icon: clockIcon,
+  },
+   {
+    title:'Oversell protection',
+    subtitle:'Automatically stop sales when stock hits zero to prevent overselling.',
+    icon: protectionIcon,
+  },
+   {
+    title:'Low stock alerts',
+    subtitle:'Get notified when items get low so you can restock on time.',
+    icon: bellIcon,
+  },
+   {
+    title:'Stock history timeline',
+    subtitle:'See a clear timeline of all stock changes in one organized view.',
+    icon: powerIcon,
+  },
+]
+
+export const monthlyData=[
+  {
+    title:'Free plan',
+    price:'0',
+    subtitle:'Perfect for beginners who want to explore the platform..',
+    description:'What includes',
+    buttonText:'Start for free',
+    isPopular: false,
+    features:[
+      "Up to 50 products",
+      "Basic inventory tracking",
+      "1 sales channel",
+      "Email support",
+      "Basic Analytics",
+      "Standard Shipping Standard"
+    ]
+  },
+  {
+    title:'Starter plan',
+    price:'19',
+    subtitle:'Great for small online stores needing essential tools.',
+    description:'Includes everything in the Free, plus',
+    buttonText:'Get Started',
+    isPopular: false,
+    features:[
+      "Up to 200 products",
+      "Basic inventory tracking",
+      "1 sales channel",
+      "Email support",
+      "Basic Analytics",
+      "Standard Shipping Standard"
+    ]
+  },
+  {
+    title:'Growth Plan',
+    price:'49',
+    subtitle:'Ideal for growing businesses selling across multiple channels.',
+    description:'Includes everything in Starter, plus',
+    buttonText:'Upgrade to growth',
+    isPopular: true,
+    features:[
+      "Unlimited products",
+      "Multi-channel selling (Instagram, Amazon, Facebook, etc.)",
+      "Advanced analytics & reports",
+      "Delivery tracking with notifications",
+      "POS Pro sync",
+      "Automated stock updates",
+      "Chat + Email support"
+    ]
+  },
+  {
+    title:'Pro plan',
+    price:'99',
+    subtitle:'Best for scaling brands needing automation and team features.',
+    description:'Includes everything in Growth, plus',
+    buttonText:'Go Pro',
+    isPopular: false,
+    features:[
+      "Unlimited Orders",
+      "Team access (up to 10 members)",
+      "Advanced revenue dashboards",
+      "Payout & settlement reports",
+      "API access",
+      "Dedicated account support",
+      "Early access to new features"
+    ]
+  },
+]
+
+export const yearlyData=[
+  {
+    title:'Free plan',
+    price:'0',
+    subtitle:'Perfect for beginners who want to explore the platform..',
+    description:'What includes',
+    buttonText:'Start for free',
+    isPopular: false,
+    features:[
+      "Up to 50 products",
+      "Basic inventory tracking",
+      "1 sales channel",
+      "Email support",
+      "Basic Analytics",
+      "Standard Shipping Standard"
+    ]
+  },
+  {
+    title:'Starter plan',
+    price:'10',
+    subtitle:'Great for small online stores needing essential tools.',
+    description:'Includes everything in the Free, plus',
+    buttonText:'Get Started',
+    isPopular: false,
+    features:[
+      "Up to 200 products",
+      "Basic inventory tracking",
+      "1 sales channel",
+      "Email support",
+      "Basic Analytics",
+      "Standard Shipping Standard"
+    ]
+  },
+  {
+    title:'Growth Plan',
+    price:'39',
+    subtitle:'Ideal for growing businesses selling across multiple channels.',
+    description:'Includes everything in Starter, plus',
+    buttonText:'Upgrade to growth',
+    isPopular: true,
+    features:[
+      "Unlimited products",
+      "Multi-channel selling (Instagram, Amazon, Facebook, etc.)",
+      "Advanced analytics & reports",
+      "Delivery tracking with notifications",
+      "POS Pro sync",
+      "Automated stock updates",
+      "Chat + Email support"
+    ]
+  },
+  {
+    title:'Pro plan',
+    price:'79',
+    subtitle:'Best for scaling brands needing automation and team features.',
+    description:'Includes everything in Growth, plus',
+    buttonText:'Go Pro',
+    isPopular: false,
+    features:[
+      "Unlimited Orders",
+      "Team access (up to 10 members)",
+      "Advanced revenue dashboards",
+      "Payout & settlement reports",
+      "API access",
+      "Dedicated account support",
+      "Early access to new features"
+    ]
+  },
+]
+
+
+export const featureByPlanData=[{
+  "plans": [
+    {
+      "name": "Free",
+      "pricing": {
+        "monthly": "$0 / month",
+        "yearly": "$0 / year"
+      },
+      "features": {
+        "product_limit": 50,
+        "sales_channels": 1,
+        "inventory_sync": "Basic",
+        "order_management": "Basic",
+        "shipping_integration": "Standard",
+        "discounts_coupons": false,
+        "pos_integration": false,
+        "multi_channel_selling": false,
+        "analytics": "Basic",
+        "delivery_tracking": false,
+        "automation": false,
+        "team_access": "1 user",
+        "api_access": false,
+        "support": "Email"
+      }
+    },
+    {
+      "name": "Starter",
+      "pricing": {
+        "monthly": "$19 / month",
+        "yearly": "$29 / year"
+      },
+      "features": {
+        "product_limit": 200,
+        "sales_channels": 3,
+        "inventory_sync": "Real-time",
+        "order_management": "Advanced",
+        "shipping_integration": "Standard",
+        "discounts_coupons": true,
+        "pos_integration": "Basic",
+        "multi_channel_selling": false,
+        "analytics": "Standard",
+        "delivery_tracking": false,
+        "automation": false,
+        "team_access": "1 user",
+        "api_access": false,
+        "support": "Priority Email"
+      }
+    },
+    {
+      "name": "Growth",
+      "pricing": {
+        "monthly": "$49 / month",
+        "yearly": "$79 / year"
+      },
+      "features": {
+        "product_limit": "Unlimited",
+        "sales_channels": "Unlimited",
+        "inventory_sync": "Real-time",
+        "order_management": "Advanced",
+        "shipping_integration": "Priority",
+        "discounts_coupons": true,
+        "pos_integration": "Pro",
+        "multi_channel_selling": true,
+        "analytics": "Advanced",
+        "delivery_tracking": true,
+        "automation": true,
+        "team_access": "3 users",
+        "api_access": false,
+        "support": "Chat + Email"
+      }
+    },
+    {
+      "name": "Pro",
+      "pricing": {
+        "monthly": "$99 / month",
+        "yearly": "$299 / year"
+      },
+      "features": {
+        "product_limit": "Unlimited",
+        "sales_channels": "Unlimited",
+        "inventory_sync": "Real-time",
+        "order_management": "Advanced",
+        "shipping_integration": "Priority",
+        "discounts_coupons": true,
+        "pos_integration": "Pro",
+        "multi_channel_selling": true,
+        "analytics": "Advanced",
+        "delivery_tracking": true,
+        "automation": "Full",
+        "team_access": "10 users",
+        "api_access": true,
+        "support": "Dedicated Support"
+      }
+    }
+  ]
+}
+]

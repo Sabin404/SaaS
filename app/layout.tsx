@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 
 import "./globals.css";
 import { Google_Sans_Flex, Google_Sans } from "next/font/google";
+import Navbar from "./_components/Navbar";
+import Footer from "./_components/Footer";
 
 const googleSansFlex = Google_Sans_Flex({
   variable: "--font-google-sans-flex",
@@ -26,7 +28,13 @@ export default function RootLayout({
       <body
         className={` ${googleSansFlex.className}  ${googleSans.variable}   antialiased overflow-x-hidden  `}
       >
+        <header className="sticky top-0 z-50 w-full bg-white">
+          <Navbar />
+        </header>
         {children}
+        <footer className="bg-[#14162F] ">
+          <Footer />
+        </footer>
       </body>
     </html>
   );

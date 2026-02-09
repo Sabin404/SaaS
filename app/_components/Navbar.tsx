@@ -37,17 +37,14 @@ function Navbar() {
           )}
         </div>
         <div className="flex items-center gap-2 max-lg:hidden">
-          <Button
-            variant="outline"
-            className="bg-primary cursor-pointer text-btn-text-primary border-none gap-2 hover:bg-hover-primary hover:text-white"
-          >
+          <Button className="hover:cursor-pointer">
             <LogIn size={16} />
             Login
           </Button>
 
           <Button
             variant="outline"
-            className="cursor-pointer  text-btn-text-secondary gap-2"
+            className="cursor-pointer hover:text-white gap-2"
           >
             Register
             <MoveRight size={14} />
@@ -78,7 +75,7 @@ function Navbar() {
           <div className="space-x-4">
             <Button
               variant="outline"
-              className="bg-primary cursor-pointer text-btn-text-primary border-none gap-2 hover:bg-hover-primary hover:text-white  "
+              className="bg-primary_brand cursor-pointer  border-none gap-2  hover:text-white  "
             >
               <LogIn size={16} />
               Login

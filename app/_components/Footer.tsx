@@ -19,19 +19,19 @@ function Footer() {
           <div className="flex gap-4">
             <Facebook
               size={20}
-              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
+              className="bg-primary_brand h-8 w-8 rounded-full text-icon-primary p-1.5"
             />
             <Instagram
               size={20}
-              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
+              className="bg-primary_brand h-8 w-8 rounded-full text-icon-primary p-1.5"
             />
             <Twitter
               size={20}
-              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
+              className="bg-primary_brand h-8 w-8 rounded-full text-icon-primary p-1.5"
             />
             <Linkedin
               size={20}
-              className="bg-white h-8 w-8 rounded-full text-icon-primary p-1.5"
+              className="bg-primary_brand h-8 w-8 rounded-full text-icon-primary p-1.5"
             />
           </div>
         </div>

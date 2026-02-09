@@ -14,9 +14,9 @@ import Footer from "./_components/Footer";
 function App() {
   return (
     <main>
-      <header className="sticky top-0 z-50 w-full bg-white">
+      {/* <header className="sticky top-0 z-50 w-full bg-white">
         <Navbar />
-      </header>
+      </header> */}
       <section>
         <Hero />
       </section>
@@ -44,9 +44,9 @@ function App() {
       <section className="bg-seller py-6">
         <NewsLetter />
       </section>
-      <footer className=" bg-footer">
+      {/* <footer className=" bg-footer">
         <Footer />
-      </footer>
+      </footer> */}
     </main>
   );
 }
