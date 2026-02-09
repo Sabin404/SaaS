@@ -52,14 +52,14 @@ function Seller() {
                 <Button
                   className="flex justify-start items-center gap-2 font-light cursor-pointer"
                   onClick={() => setReadIndex(null)}
-                  variant="readmore"
+                  variant="outline"
                 >
                   Show Less
                   <ArrowDownRight size={18} />
                 </Button>
               ) : (
                 <Button
-                  variant="readmore"
+                  variant="outline"
                   className="flex justify-start items-center gap-2 font-light cursor-pointer"
                   onClick={() => setReadIndex(i)}
                 >
