@@ -49,7 +49,7 @@ function KeyFeatures() {
               handleClick(item);
               setTitle(item);
             }}
-            variant="keyFeature"
+            variant="outline"
             className={`pb-2 text-sm font-medium transition-all duration-200 cursor-pointer
               ${
                 active === item
