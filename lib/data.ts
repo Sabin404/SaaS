@@ -320,7 +320,6 @@ export const yearlyData=[
   },
 ]
 
-
 export const featureByPlanData=[{
   "plans": [
     {

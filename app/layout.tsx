@@ -8,10 +8,12 @@ import Footer from "./_components/Footer";
 const googleSansFlex = Google_Sans_Flex({
   variable: "--font-google-sans-flex",
   subsets: ["latin"],
+  fallback: ["sans-serif"],
 });
 const googleSans = Google_Sans({
   variable: "--font-google-sans",
   subsets: ["latin"],
+  fallback: ["sans-serif"],
 });
 export const metadata: Metadata = {
   title: "Landing Page",
