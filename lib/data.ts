@@ -6,7 +6,9 @@ import {
   clockIcon,
   protectionIcon,
   bellIcon,
-  powerIcon
+  powerIcon,
+  clipBoard,
+  truck,solarTag,channel, creditCard,chartLine,gridLine,box,
 } from "@/app/_components/icons/Icons";
 import Mark from "./../app/assets/mark.png";
 import Sarah from "./../app/assets/sarah.png";
@@ -19,6 +21,8 @@ import Bimal from "./../app/assets/bimal.jpg";
 import allproduct from "./../app/assets/allproduct.png";
 import realtime from "./../app/assets/realtime.png";
 import sync from './../app/assets/sync.png';
+import mission from './../app/assets/mission.jpg'
+import vision from './../app/assets/vision.jpg'
 
 
 export const sellerData = [
@@ -416,4 +420,64 @@ export const featureByPlanData=[{
     }
   ]
 }
+]
+
+export const companyData=[
+  {
+    id:1,
+    title:"Product and catlogs",
+    icon:box,
+  },
+  {
+    id:2,
+    title:"Real time Inventory control",
+    icon:chartLine,
+  },
+  {
+    id:3,
+    title:"Order management",
+    icon:clipBoard,
+  },
+  {
+    id:4,
+    title:"Shipping & Delivery Integrations",
+    icon:truck,
+  },
+  {
+    id:5,
+    title:"POS + Online Store Sync",
+    icon:channel,
+  },
+  {
+    id:6,
+    title:"Discounts & Promotions",
+    icon:creditCard,
+  },
+  {
+    id:7,
+    title:"Analytics & Reporting",
+    icon:gridLine,
+  }
+  ,{
+    id:8,
+    title:"Payouts & Settlement Tracking",
+    icon:solarTag,
+  }
+]
+
+export const aimData=[
+  {
+    id:1,
+    title:"To create a connected commerce ecosystem where accuracy, efficiency, and growth come naturally",
+    description:"Manage every item, variant, and category without switching between tools.",
+    subtitle:'Our mission',
+    image:mission
+  },
+  {
+    id:2,
+    title:"A world where every retail and eCommerce business—no matter its size—operates with enterprise-level precision.",
+    description:"We envision a future where technology removes friction, improves transparency, and enables sellers to focus on innovation and growth.",
+    subtitle:'Our vision',
+    image:vision
+  }
 ]

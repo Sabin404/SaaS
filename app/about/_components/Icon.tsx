@@ -20,20 +20,20 @@ const Icon = () => {
     Aicene,
   ];
   return (
-    <section>
-      <div className="container text-center lg:pt-[60px]">
+    <section className="relative ">
+      <div className="container text-center lg:pt-15 z-50">
         <div>
-          <h1 className="lg:text-[20px] font-semibold leading-[160%]">
+          <h1 className="lg:text-[20px] pt-4 lg:pt-0 font-semibold leading-[160%] ">
             Trusted by Businesses Worldwide
           </h1>
         </div>
-        <div className="flex gap-4 overflow-x-auto scrollbar-hide mt-6">
+        <div className="flex gap-4 overflow-x-auto scrollbar-hide lg:mt-6 mt-2">
           {images.map((image, index) => (
             <Image
               key={index}
               src={image}
               alt={`Image ${index}`}
-              className="w-40 h-32 object-contain aspect-4/3"
+              className="lg:w-40 lg:h-32 w-30 h-25 object-contain px-4 lg:px-0"
             />
           ))}
         </div>
