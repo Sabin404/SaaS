@@ -4,6 +4,7 @@ import Icon from "./_components/Icon";
 import Company from "./_components/Company";
 import Deliver from "./_components/Deliver";
 import Aim from "./_components/Aim";
+import Value from "./_components/Value";
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <Company />
       <Deliver />
       <Aim />
+      <Value />
     </>
   );
 };

@@ -8,7 +8,7 @@ import {
   bellIcon,
   powerIcon,
   clipBoard,
-  truck,solarTag,channel, creditCard,chartLine,gridLine,box,
+  truck,solarTag,channel, creditCard,chartLine,gridLine,box,collab,link,excellence,integrity
 } from "@/app/_components/icons/Icons";
 import Mark from "./../app/assets/mark.png";
 import Sarah from "./../app/assets/sarah.png";
@@ -479,5 +479,32 @@ export const aimData=[
     description:"We envision a future where technology removes friction, improves transparency, and enables sellers to focus on innovation and growth.",
     subtitle:'Our vision',
     image:vision
+  }
+]
+
+export const valueData=[
+  {
+    id:1,
+    title:'Integrity',
+    description:'We operate with transparency, honesty, and dependability in everything we do.',
+    icon:integrity
+  },
+  {
+    id:2,
+    title:'Customer-Centric Innovation',
+    description:'We design solutions that solve real problems and create measurable value for our users.',
+    icon:link
+  },
+  {
+    id:3,
+    title:'Excellence',
+    description:'We uphold high standards in performance, reliability, and user experience.',
+    icon:excellence
+  },
+  {
+    id:4,
+    title:'Collaboration',
+    description:'We believe the best outcomes come from working together—with our team, partners, and customers.',
+    icon:collab
   }
 ]
