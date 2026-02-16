@@ -8,7 +8,8 @@ import {
   bellIcon,
   powerIcon,
   clipBoard,
-  truck,solarTag,channel, creditCard,chartLine,gridLine,box,collab,link,excellence,integrity
+  truck,solarTag,channel, creditCard,chartLine,gridLine,box,collab,link,excellence,integrity,
+  manual
 } from "@/app/_components/icons/Icons";
 import Mark from "./../app/assets/mark.png";
 import Sarah from "./../app/assets/sarah.png";
@@ -23,6 +24,12 @@ import realtime from "./../app/assets/realtime.png";
 import sync from './../app/assets/sync.png';
 import mission from './../app/assets/mission.jpg'
 import vision from './../app/assets/vision.jpg'
+import esewa from './../app/assets/payment/esewa.png';
+import fonepay from './../app/assets/payment/fonepay.png';
+import parbhu from './../app/assets/payment/parbhu.png';
+import khalti from './../app/assets/payment/khalti.png'
+import cod from './../app/assets/payment/cod.png'
+import payment from './../app/assets/payment/payment.png'
 
 
 export const sellerData = [
@@ -507,4 +514,55 @@ export const valueData=[
     description:'We believe the best outcomes come from working together—with our team, partners, and customers.',
     icon:collab
   }
+]
+
+export const paymentData=[
+  {
+    id:1,
+    title:'Cash on Delivery',
+    description:'Customers pay with cash when the order is delivered.',
+    icon:cod,
+    isIcon:true,
+    connected:false,
+  },
+  {
+    id:2,
+    title:'Manual Payment',
+    description:'Customers pay using bank transfer or QR payment.',
+    icon:payment,
+    isIcon:true,
+    connected:false,
+  },
+  {
+    id:3,
+    title:'Esewa',
+    description:'Accept payments from customers using eSewa wallet.',
+    icon:esewa,
+    isIcon:false,
+    connected:false,
+  },
+  {
+    id:4,
+    title:'Khalti',
+    description:'Accept payments from customers using Khalti wallet.',
+    icon:khalti,
+    isIcon:false,
+    connected:false,
+  },
+  {
+    id:5,
+    title:'Fonepay',
+    description:'Accept payments from customers using Fonepay wallet.',
+    icon:fonepay,
+    isIcon:false,
+    connected:false,
+  },
+  {
+    id:6,
+    title:'Parbhu',
+    description:'Accept payments from customers using Parbhu wallet.',
+    icon:parbhu,
+    isIcon:false,
+    connected:true,
+  },
 ]

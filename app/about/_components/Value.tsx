@@ -26,7 +26,7 @@ const Value = () => {
 
           {/* mobile ko lagi */}
 
-          <div className="lg:hidden block flex flex-col justify-center items-center">
+          <div className="lg:hidden flex flex-col justify-center items-center">
             <span className="bg-white_brand text-body-text_brand px-3 py-1 w-fit lg:mt-[22px] rounded-full text-sm font-medium">
               Our Values
             </span>
