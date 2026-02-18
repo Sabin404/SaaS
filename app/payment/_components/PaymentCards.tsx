@@ -84,7 +84,7 @@ const PaymentCards = ({ item }: PaymentCardsProps) => {
         ))}
       </div>
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="p-0">
+        <DialogContent className="p-0 overflow-hidden">
           <DialogHeader className="bg-[#EBECF3] p-4">
             <DialogTitle>
               {selected?.connected ? "Configure" : "Setup "} {selected?.title}
@@ -97,7 +97,7 @@ const PaymentCards = ({ item }: PaymentCardsProps) => {
           {selected?.connected ? (
             <PaymentForm mode="configure" onClose={() => setOpen(false)} />
           ) : (
-            <PaymentForm mode="activate" onClose={() => setOpen(false)} />
+            <PaymentForm mode="payment" onClose={() => setOpen(false)} />
           )}
         </DialogContent>
       </Dialog>
