@@ -174,7 +174,7 @@ const PaymentForm = ({
                 )}
               />
               {paymentErrors.payment && (
-                <span className="text-red-500 hover:cursor-pointer text-[14px] block mt-1">
+                <span className="text-red-500  text-[14px] block mt-1">
                   {paymentErrors.payment.message}
                 </span>
               )}

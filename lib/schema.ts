@@ -28,6 +28,14 @@ const paymentFormSchema = z.object({
   require: z.boolean(), 
 });
 
-export { configureFormSchema, paymentFormSchema };
+const multistepFormSchema = z.object({
+  firstname:z.string().nonempty("First name is required"),
+  middlename:z.string().optional(),
+  lastname:z.string().nonempty("Last name is required"),
+  email:z.string().email("Email is required")
+}) 
+
+export { configureFormSchema, paymentFormSchema, multistepFormSchema };
 export type ConfigureFormData = z.infer<typeof configureFormSchema>;
 export type PaymentFormData = z.infer<typeof paymentFormSchema>;
+export type MultistepFormData = z.infer<typeof multistepFormSchema>;
