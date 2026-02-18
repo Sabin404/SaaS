@@ -32,7 +32,7 @@ const multistepFormSchema = z.object({
   firstname:z.string().nonempty("First name is required"),
   middlename:z.string().optional(),
   lastname:z.string().nonempty("Last name is required"),
-  email:z.string().email("Email is required")
+  email:z.string().email("Please enter a valid email address").nonempty("Email is required"),
 }) 
 
 export { configureFormSchema, paymentFormSchema, multistepFormSchema };
